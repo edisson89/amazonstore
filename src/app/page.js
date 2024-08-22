@@ -1,95 +1,65 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+/** @format */
+"use client"
+import { useState } from "react"
+import Image from "next/image"
+import style from "./page.module.css"
+import image from "./assets/amazon-ar21.svg"
+import Cards from "./components/cards"
 
 export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+	const [isOpen, setIsOpen] = useState(false)
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  );
+	const toggleMenu = () => {
+		setIsOpen(!isOpen)
+	}
+	return (
+		<div className={style.main}>
+			<div className={style.header}>
+				<div className={style.logocontain}>
+					<a
+						href="https://amzn.to/4dnkRpX"
+						target="_blank"
+					>
+						<Image
+							priority={true}
+							className={style.logo}
+							src={image}
+							alt="amazon logo"
+							width={350}
+							height={200}
+						/>
+					</a>
+				</div>
+				{/* <div className={style.nav}>
+					<button onClick={toggleMenu}>{isOpen ? "Cerrar" : "Menú"}</button>
+					<ul className={isOpen ? "show" : ""}>
+						<li>
+							<a href="https://amzn.to/3SLPWMc">
+								<h2>Enviar a user</h2>
+							</a>
+						</li>
+						<li>Buscar Amazon</li>
+						<li>
+							<a href="#">
+								<h2>Ofertas</h2>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<h2>Cuentas y Listas</h2>
+							</a>
+						</li>
+						<li>
+							<a href="https://amzn.to/4dGgjLz">
+								<h2>Devoluciones y pedidos</h2>
+							</a>
+						</li>
+					</ul>
+				</div> */}
+			</div>
+			<main>
+				<Cards />
+			</main>
+		</div>
+	)
 }
