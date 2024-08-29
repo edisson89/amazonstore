@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import imagen from './assets/logoamazon.png'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,6 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
         <head>
         <meta charset="UTF-8" />
+        <meta property="og:image" content={imagen} />
         <meta name="Descubre todas las ofertas que tenemos para ti en Amazon Prime,Electronica,Juguetes,Ropa.Ofertas y promociones de hoy " content="Ofertas generadas en la Web" />
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content="Amazon Ofertas" />
