@@ -30,6 +30,8 @@ export default function Home() {
 						/>
 					</a>
 				</div>
+				
+				<h1 className={style.title}>Amazon ofertas </h1> 
 				{/* <div className={style.nav}>
 					<button onClick={toggleMenu}>{isOpen ? "Cerrar" : "Menú"}</button>
 					<ul className={isOpen ? "show" : ""}>
