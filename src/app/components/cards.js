@@ -74,7 +74,28 @@ import bolso1 from '../assets/bolso/bolso2.jpg'
 import bolso2 from '../assets/bolso/bolso3.jpg'
 import bolso3 from '../assets/bolso/bolso4.jpg'
 import bolso4 from '../assets/bolso/bolso5.jpg'
-
+import pc1 from '../assets/computador/pc1.jpg'
+import pc2 from '../assets/computador/pc2.jpg'
+import pc3 from '../assets/computador/pc3.jpg'
+import pc4 from '../assets/computador/pc4.jpg'
+import depiladora from '../assets/depiladora/depiladora.jpg'
+import depiladora1 from '../assets/depiladora/depiladora2.jpg'
+import depiladora2 from '../assets/depiladora/depiladora3.jpg'
+import depiladora3 from '../assets/depiladora/depiladora4.jpg'
+import audifonos from '../assets/audifonoblancos/audifonos.jpg'
+import audifonos1 from '../assets/audifonoblancos/audifonos1.jpg'
+import audifonos2 from '../assets/audifonoblancos/audifonos2.jpg'
+import audifonos3 from '../assets/audifonoblancos/audifonos4.jpg'
+import audifonos4 from '../assets/audifonoblancos/audifonos5.jpg'
+import pantalon from '../assets/pantalones/pantalon.jpg'
+import pantalon1 from '../assets/pantalones/pantalon1.jpg'
+import pantalon2 from '../assets/pantalones/pantalon3.jpg'
+import pantalon3 from '../assets/pantalones/pantalon4.jpg'
+import tabble from '../assets/tablet/table.jpg'
+import tabble1 from '../assets/tablet/table1.jpg'
+import tabble2 from '../assets/tablet/table2.jpg'
+import tabble3 from '../assets/tablet/table3.jpg'
+import tabble4 from '../assets/tablet/table4.jpg'
 
 
 
@@ -86,6 +107,11 @@ import Card from "./card"
 
 export default function Cards() {
 	const images = [
+		{title:'SAMSUNG Galaxy Tab S9 FE+ Plus Tablet Android de 12.4 pulgadas y 128 GB, batería de larga duración, potente procesador, S Pen, cámara de 8 MP, versión estadounidense, 2023, plata',image:[tabble,tabble1,tabble2,tabble3,tabble4],url:'',ofert:'-20%',price:'1,939,879.'},
+		{title:'Eddie Bauer Pantalones Rainier para hombre',image:[pantalon,pantalon1,pantalon2,pantalon3],url:'https://amzn.to/4cJoA0j',ofert:'-46%',price:'152,768'},
+		{title:'Soundcore by Anker P20i - Auriculares inalámbricos verdaderos, controladores de 0.394 pulgadas con graves grandes, Bluetooth 5.3, 30 horas de tiempo de reproducción, resistentes al agua, 2 micrófonos',image:[audifonos,audifonos1,audifonos2,audifonos3,audifonos4],url:'https://amzn.to/3XnWR14',ofert:'-50%',price:'80,789'},
+		{title:'Ulike Depilación láser, depilación Air 10 IPL para mujeres y hombres, contacto de enfriamiento de hielo de 65 °F, luces duales, sensor de piel y modo SHR* para una depilación casi indolora, efectiva',image:[depiladora,depiladora1,depiladora2,depiladora3],url:'https://amzn.to/4cIErfS',ofert:'-25%',price:'1,208,408'},
+		{title:'Lenovo IdeaPad 3i Chromebook, pantalla FHD de 15.6", Intel Celeron N4500, 8 GB de RAM, 64 GB eMMC, 1920 x 1080 px, cámara de 720p, Chrome OS, azul abismo',image:[pc1,pc2,pc3,pc4],url:'https://amzn.to/4e536fJ',ofert:'-24%',price:'885,088'},
 		{title:'Frye Melissa Shopper',image:[bolso,bolso1,bolso2,bolso3,bolso4],url:'https://amzn.to/4e1kemz',ofert:'',price:'1,437,527'},
 		{title:'Hello MrLin Zapatillas de correr para hombre, antideslizantes, atléticas, para caminar, tipo hoja, hip-hop',image:[bota,bota1,bota2,bota3,bota4],url:'https://amzn.to/3YXLxK4',ofert:'',price:'176,663'},
 		{title:'Zapatos deportivos para hombre sin cordones para caminar y correr, tenis con diseño de hoja, informales, cómodos, antideslizantes, para el trabajo, deportes, entrenamiento atlético',image:[tenis,tenis1,tenis2,tenis3],url:'https://amzn.to/4fTfMYR',ofert:'-10%',price:'132,487'},
