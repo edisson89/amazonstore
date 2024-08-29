@@ -6,6 +6,9 @@
   background-color: gainsboro;
   color: aliceblue;
 }
+.title{
+  padding: 5px;
+}
 .header{
   display: flex;
   flex-direction: row;
