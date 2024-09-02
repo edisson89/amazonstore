@@ -15,6 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
         <head>
         <meta charset="UTF-8" />
+        <link rel="icon" href="./favicon.ico" type="image/x-icon"></link>
         <meta property="og:image" content={imagen} />
         <meta name="Descubre todas las ofertas que tenemos para ti en Amazon Prime,Electronica,Juguetes,Ropa.Ofertas y promociones de hoy " content="Ofertas generadas en la Web" />
         <meta name="robots" content="index, follow" />
