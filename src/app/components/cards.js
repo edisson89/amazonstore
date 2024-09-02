@@ -96,8 +96,17 @@ import tabble1 from '../assets/tablet/table1.jpg'
 import tabble2 from '../assets/tablet/table2.jpg'
 import tabble3 from '../assets/tablet/table3.jpg'
 import tabble4 from '../assets/tablet/table4.jpg'
-
-
+import ps from '../assets/control/ps.jpg'
+import ps1 from '../assets/control/ps2.jpg'
+import ps2 from '../assets/control/ps3.jpg'
+import ps3 from '../assets/control/ps4.jpg'
+import juego from '../assets/callduty/juego.jpg'
+import juego1 from '../assets/callduty/juego2.jpg'
+import juego2 from '../assets/callduty/juego3.jpg'
+import juego3 from '../assets/callduty/juego4.jpg'
+import cooler from '../assets/enfriador/cooler.jpg'
+import cooler1 from '../assets/enfriador/cooler2.jpg'
+import cooler2 from '../assets/enfriador/cooler3.jpg'
 
 import Image from "next/image"
 import Card from "./card"
@@ -107,6 +116,9 @@ import Card from "./card"
 
 export default function Cards() {
 	const images = [
+		{title:'PS5 / PS5 Slim Stand and Cooling Station with RGB LED Controller Charging Station for PlayStation 5 Console, PS5 Controller Charger, PS5 / PS5 Slim Accessories with 3 Level Cooling Fan',image:[cooler,cooler1,cooler2],url:'https://amzn.to/4dKRBKr',ofert:'-9%',price:'166,958.'},
+		{title:'Call of Duty®: Black Ops 6 - PlayStation 5',image:[juego,juego1,juego2,juego3],url:'https://amzn.to/4dMT6rw',ofert:'-5%',price:'292,208'},
+		{title:'Xbox Wireless Controller Shock Blue - Wireless - Bluetooth - USB - Xbox Series X, Xbox Series S, Xbox One, PC, Android, iOS, Tablet - Shock Blue',image:[ps,ps1,ps2,ps3],url:'https://amzn.to/3Xul04X',ofert:'-32%',price:'183,407'},
 		{title:'SAMSUNG Galaxy Tab S9 FE+ Plus Tablet Android de 12.4 pulgadas y 128 GB, batería de larga duración, potente procesador, S Pen, cámara de 8 MP, versión estadounidense, 2023, plata',image:[tabble,tabble1,tabble2,tabble3,tabble4],url:'',ofert:'-20%',price:'1,939,879.'},
 		{title:'Eddie Bauer Pantalones Rainier para hombre',image:[pantalon,pantalon1,pantalon2,pantalon3],url:'https://amzn.to/4cJoA0j',ofert:'-46%',price:'152,768'},
 		{title:'Soundcore by Anker P20i - Auriculares inalámbricos verdaderos, controladores de 0.394 pulgadas con graves grandes, Bluetooth 5.3, 30 horas de tiempo de reproducción, resistentes al agua, 2 micrófonos',image:[audifonos,audifonos1,audifonos2,audifonos3,audifonos4],url:'https://amzn.to/3XnWR14',ofert:'-50%',price:'80,789'},

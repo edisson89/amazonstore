@@ -9,7 +9,7 @@ const Card = ({ title, image, url, precio, oferta }) => {
 
 	const nextSlide = useCallback(() => {
 		setActiveIndex((prevIndex) => (prevIndex + 1) % image.length)
-	},[image])
+	}, [image])
 
 	const prevSlide = () => {
 		setActiveIndex((prevIndex) => (prevIndex - 1 + image.length) % image.length)
@@ -27,37 +27,59 @@ const Card = ({ title, image, url, precio, oferta }) => {
 	return (
 		<div className={styles.card}>
 			{showTitle && (
-				<div  className={styles.title}>
+				<div className={styles.title}>
 					<a
-					href={url}
-					target="_blank"
-				>
-					<h2 >{title}</h2>
-					<br></br>
-					<br></br>
-					
-					<h3 className={styles.precio}>{precio}</h3>
-					<br></br>
-					<h2 className={styles.comprar} href={url}>Comprar</h2>
-					<br></br>
+						href={url}
+						target="_blank"
+					>
+						<h2>{title}</h2>
+						<br></br>
+						<br></br>
 
-					<h1 className={styles.oferta}>{oferta}</h1>
-				</a>
+						<h3 className={styles.precio}>{precio}</h3>
+						<br></br>
+						<h2
+							className={styles.comprar}
+							href={url}
+						>
+							Comprar
+						</h2>
+						<br></br>
+
+						<h1 className={styles.oferta}>{oferta}</h1>
+					</a>
+					
 				</div>
-				
 			)}
 
 			<div className={styles.imageContainer}>
 				{image && (
 					<>
-					<div className={styles.botones }>
-						<button className={styles.btn} onClick={prevSlide}>Anterior</button>
-						<button className={styles.btn} onClick={toggleTitleVisibility}>Ocultar titulo</button>
-						<button className={styles.btn} onClick={nextSlide}>Siguiente</button>
-					</div>
-						
+						<div className={styles.botones}>
+							<button
+								className={styles.btn}
+								onClick={prevSlide}
+							>
+								Anterior
+							</button>
+							<button
+								className={styles.btn}
+								onClick={toggleTitleVisibility}
+							>
+								Ocultar titulo
+							</button>
+							<button
+								className={styles.btn}
+								onClick={nextSlide}
+							>
+								Siguiente
+							</button>
+						</div>
+
 						<div className={styles.contenedor}>
-							<a  rel="noopener noreferrer" className={styles.link}
+							<a
+								rel="noopener noreferrer"
+								className={styles.link}
 								href={url}
 								target="_blank"
 							>
@@ -68,6 +90,13 @@ const Card = ({ title, image, url, precio, oferta }) => {
 									width={220}
 								/>
 							</a>
+							<a
+						rel="noopener noreferrer"
+						href="https://www.amazonofertas.live/"
+					
+					>
+						Home
+					</a>
 						</div>
 					</>
 				)}
