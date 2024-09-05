@@ -107,6 +107,18 @@ import juego3 from '../assets/callduty/juego4.jpg'
 import cooler from '../assets/enfriador/cooler.jpg'
 import cooler1 from '../assets/enfriador/cooler2.jpg'
 import cooler2 from '../assets/enfriador/cooler3.jpg'
+import secador from '../assets/secador/secador.jpg'
+import secador1 from '../assets/secador/secador1.jpg'
+import secador2 from '../assets/secador/secador3.jpg'
+import secador3 from '../assets/secador/secador4.jpg'
+
+import pantalla from '../assets/pantalla/pantalla.jpg'
+import pantalla1 from '../assets/pantalla/pantalla2.jpg'
+import pantalla2 from '../assets/pantalla/pantalla3.jpg'
+import pantalla3 from '../assets/pantalla/pantalla4.jpg'
+
+
+
 
 import Image from "next/image"
 import Card from "./card"
@@ -116,6 +128,9 @@ import Card from "./card"
 
 export default function Cards() {
 	const images = [
+		
+		{title:'Sceptre Monitor WQHD ultraancho curvo de 34 pulgadas 3440 x 1440 R1500 hasta 165Hz DisplayPort x2 99% sRGB 1 ms imagen por imagen, negro máquina 2023',image:[pantalla,pantalla1,pantalla2,pantalla3],url:'https://www.amazon.com/Sceptre-ultraancho-pulgadas-DisplayPort-C345B-QUT168/dp/B0BTK1C533?th=1&linkCode=ll1&tag=edd06d-20&linkId=ae14c24655b357af4453bfa39f42f38b&language=es_US&ref_=as_li_ss_tl',ofert:'21%',price:'920,024'},
+		{title:'Wavytalk Secador de pelo iónico profesional con difusor y concentrador para cabello rizado, secador de iones negativos de 1875 vatios con boquilla de tecnología cerámica para un secado rápido',image:[secador,secador1,secador2,secador3],url:'https://www.amazon.com/Wavytalk-profesional-concentrador-negativos-tecnolog%C3%ADa/dp/B09CP8SSGP?th=1&currency=COP&linkCode=ll1&tag=edd06d-20&linkId=74ee1678ed6433563113666c1b358316&language=es_US&ref_=as_li_ss_tl',ofert:'-42%',price:'133,128'},
 		{title:'PS5 / PS5 Slim Stand and Cooling Station with RGB LED Controller Charging Station for PlayStation 5 Console, PS5 Controller Charger, PS5 / PS5 Slim Accessories with 3 Level Cooling Fan',image:[cooler,cooler1,cooler2],url:'https://amzn.to/4dKRBKr',ofert:'-9%',price:'166,958.'},
 		{title:'Call of Duty®: Black Ops 6 - PlayStation 5',image:[juego,juego1,juego2,juego3],url:'https://amzn.to/4dMT6rw',ofert:'-5%',price:'292,208'},
 		{title:'Xbox Wireless Controller Shock Blue - Wireless - Bluetooth - USB - Xbox Series X, Xbox Series S, Xbox One, PC, Android, iOS, Tablet - Shock Blue',image:[ps,ps1,ps2,ps3],url:'https://amzn.to/3Xul04X',ofert:'-32%',price:'183,407'},
