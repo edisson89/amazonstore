@@ -15,7 +15,7 @@ const Card = ({ title, image, url, precio, oferta }) => {
 		setActiveIndex((prevIndex) => (prevIndex - 1 + image.length) % image.length)
 	}
 	useEffect(() => {
-		const timer = setInterval(nextSlide, 3000) // Cambia la imagen cada 3 segundos
+		const timer = setInterval(nextSlide, 2200) // Cambia la imagen cada 3 segundos
 		// Función para alternar la visibilidad del título
 
 		return () => clearInterval(timer) // Limpia el temporizador al desmontar el componente
@@ -28,7 +28,7 @@ const Card = ({ title, image, url, precio, oferta }) => {
 		<div className={styles.card}>
 			{showTitle && (
 				<div className={styles.title}>
-					<a
+					<a 
 						href={url}
 						target="_blank"
 					>
@@ -48,7 +48,6 @@ const Card = ({ title, image, url, precio, oferta }) => {
 
 						<h1 className={styles.oferta}>{oferta}</h1>
 					</a>
-					
 				</div>
 			)}
 
@@ -90,14 +89,13 @@ const Card = ({ title, image, url, precio, oferta }) => {
 									width={220}
 								/>
 							</a>
-							<a
-						rel="noopener noreferrer"
-						href="https://www.amazonofertas.live/"
-					
-					>
-						Home
-					</a>
 						</div>
+						<a
+							rel="noopener noreferrer"
+							href="https://www.amazonofertas.live/"
+						>
+							Home
+						</a>
 					</>
 				)}
 			</div>

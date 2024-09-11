@@ -1,3 +1,4 @@
+
 .card{
     display: flex;
     flex-direction: column;
@@ -13,6 +14,9 @@
 }
 .title{
   height: 20vh;
+}
+.titleLink{
+  font-size: 15px;
 }
 .cardtitle{
     display: flex;
@@ -62,6 +66,7 @@
   align-items: center;
 }
 .btn{
+ border: solid 2px white;
  padding: 4px;
  border-radius: 5px;
 }
@@ -84,7 +89,7 @@
   width: 60%;
   height: 35vh;
   border-radius: 4px;
-  padding: 5px;
+  
   
 }
 @media screen and (max-width : 580px) {
@@ -122,6 +127,9 @@
         min-height: 100vh;
         background-color: rgb(18, 18, 18);
     }
+    .cardsMain{
+      min-height: 100vh;
+    }
   
     .card:hover{
         opacity: 0.9;
@@ -129,12 +137,12 @@
     .imageContainer{
         display: flex;
         flex-direction: row;
-        min-height: 100vh;
+        min-height: 98vh;
         border-radius: 5px;
         flex-wrap: wrap;
         padding: 1%;
         align-content: space-around;
-        justify-content: space-between;
+        justify-content: space-between; 
         background-color: white;
         overflow: hidden;
     }
@@ -148,5 +156,13 @@
     }
     .botones{
       position: relative;
+      background-color: #9b9f9f;
+      padding: 3px;
     }
+}
+@media screen and (min-width : 1200px) {
+  .card{
+    margin-left: 20%;
+    margin-right: 20%;
+  }
 }

@@ -8,6 +8,7 @@
 }
 .title{
   padding: 5px;
+  font-size:26px;
 }
 .header{
   display: flex;
@@ -23,6 +24,7 @@
   align-items: center;
   flex-wrap: nowrap
 }
+
 .logocontain{
   margin: 1%;
   opacity: 0.6;

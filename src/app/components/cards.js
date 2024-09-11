@@ -1,4 +1,4 @@
-
+import styles from './card.module.css'
 
 import image01 from "../assets/pc/71B8P-zlcGL._AC_SX425_.jpg"
 import image1 from "../assets/pc/818s2kMJ6tL._AC_SX425_.jpg"
@@ -111,11 +111,18 @@ import secador from '../assets/secador/secador.jpg'
 import secador1 from '../assets/secador/secador1.jpg'
 import secador2 from '../assets/secador/secador3.jpg'
 import secador3 from '../assets/secador/secador4.jpg'
-
 import pantalla from '../assets/pantalla/pantalla.jpg'
 import pantalla1 from '../assets/pantalla/pantalla2.jpg'
 import pantalla2 from '../assets/pantalla/pantalla3.jpg'
 import pantalla3 from '../assets/pantalla/pantalla4.jpg'
+import gato from '../assets/gato/gato.jpg'
+import gato1 from '../assets/gato/gato2.jpg'
+import gato2 from '../assets/gato/gato3.jpg'
+
+
+
+
+
 
 
 
@@ -128,7 +135,7 @@ import Card from "./card"
 
 export default function Cards() {
 	const images = [
-		
+		{title:'Caja de arena autolimpiante – Caja de arena automática para gatos de 110 litros de autolimpieza, todo se puede usar, con 1 rollo de bolsas de basura y alfombra, control de aplicación, color blanco',image:[gato,gato1,gato2,],url:'https://amzn.to/3N0Hbed',ofert:'-14%',price:'1,263,557'},
 		{title:'Sceptre Monitor WQHD ultraancho curvo de 34 pulgadas 3440 x 1440 R1500 hasta 165Hz DisplayPort x2 99% sRGB 1 ms imagen por imagen, negro máquina 2023',image:[pantalla,pantalla1,pantalla2,pantalla3],url:'https://www.amazon.com/Sceptre-ultraancho-pulgadas-DisplayPort-C345B-QUT168/dp/B0BTK1C533?th=1&linkCode=ll1&tag=edd06d-20&linkId=ae14c24655b357af4453bfa39f42f38b&language=es_US&ref_=as_li_ss_tl',ofert:'21%',price:'920,024'},
 		{title:'Wavytalk Secador de pelo iónico profesional con difusor y concentrador para cabello rizado, secador de iones negativos de 1875 vatios con boquilla de tecnología cerámica para un secado rápido',image:[secador,secador1,secador2,secador3],url:'https://www.amazon.com/Wavytalk-profesional-concentrador-negativos-tecnolog%C3%ADa/dp/B09CP8SSGP?th=1&currency=COP&linkCode=ll1&tag=edd06d-20&linkId=74ee1678ed6433563113666c1b358316&language=es_US&ref_=as_li_ss_tl',ofert:'-42%',price:'133,128'},
 		{title:'PS5 / PS5 Slim Stand and Cooling Station with RGB LED Controller Charging Station for PlayStation 5 Console, PS5 Controller Charger, PS5 / PS5 Slim Accessories with 3 Level Cooling Fan',image:[cooler,cooler1,cooler2],url:'https://amzn.to/4dKRBKr',ofert:'-9%',price:'166,958.'},
@@ -159,10 +166,10 @@ export default function Cards() {
 	]
 	
 	return (
-		<div>
+		<div className={styles.cardsMain}>
 			{images &&
 				images.map((card, cardIndex) => (
-					<div key={cardIndex}>
+					<div key={cardIndex} className={styles.cardsMain}>
 						
 						<Card
 						title={card.title}
