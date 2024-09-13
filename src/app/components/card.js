@@ -31,6 +31,7 @@ const Card = ({ title, image, url, precio, oferta }) => {
 					<a 
 						href={url}
 						target="_blank"
+						rel="noopener noreferrer"
 					>
 						<h2>{title}</h2>
 						<br></br>
@@ -90,12 +91,7 @@ const Card = ({ title, image, url, precio, oferta }) => {
 								/>
 							</a>
 						</div>
-						<a
-							rel="noopener noreferrer"
-							href="https://www.amazonofertas.live/"
-						>
-							Home
-						</a>
+						
 					</>
 				)}
 			</div>
