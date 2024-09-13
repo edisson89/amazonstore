@@ -129,6 +129,7 @@ import gato2 from '../assets/gato/gato3.jpg'
 
 import Image from "next/image"
 import Card from "./card"
+import { match } from 'assert'
 
 
 //{title:'',image:[],url:'',ofert:'',price:''},
@@ -183,7 +184,9 @@ export default function Cards() {
 						
 						
 					</div>
-				))}
+				))
+				.sort(() => Math.random() - 0.5)
+				}
 		</div>
 	)
 }
