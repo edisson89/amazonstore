@@ -121,7 +121,6 @@ import gato from "../assets/gato/gato.jpg"
 import gato1 from "../assets/gato/gato2.jpg"
 import gato2 from "../assets/gato/gato3.jpg"
 
-import Image from "next/image"
 import Card from "./card"
 
 //{title:'',image:[],url:'',ofert:'',price:''},

@@ -3,15 +3,18 @@ import styles from "./card.module.css"
 import Image from "next/image"
 import React, { useCallback, useEffect, useState } from "react"
 
+// eslint-disable-next-line react/prop-types
 const Card = ({ title, image, url, precio, oferta }) => {
 	const [activeIndex, setActiveIndex] = useState(0)
 	const [showTitle, setShowTitle] = useState(true) // Estado para controlar la visibilidad del título
 
 	const nextSlide = useCallback(() => {
+		// eslint-disable-next-line react/prop-types
 		setActiveIndex((prevIndex) => (prevIndex + 1) % image.length)
 	}, [image])
 
 	const prevSlide = () => {
+		// eslint-disable-next-line react/prop-types
 		setActiveIndex((prevIndex) => (prevIndex - 1 + image.length) % image.length)
 	}
 	useEffect(() => {

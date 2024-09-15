@@ -1,3 +1,5 @@
+/* eslint-disable react/react-in-jsx-scope */
+/* eslint-disable react/prop-types */
 /** @format */
 
 import { Inter } from "next/font/google"
@@ -13,6 +15,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 	return (
+		// eslint-disable-next-line react/react-in-jsx-scope
 		<html lang="en">
 			<head>
 				<meta charset="UTF-8" />

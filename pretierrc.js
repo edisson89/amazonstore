@@ -1,3 +1,5 @@
+/** @format */
+
 // prettier.config.js, .prettierrc.js, prettier.config.cjs, or .prettierrc.cjs
 
 /**
@@ -5,10 +7,10 @@
  * @type {import("prettier").Config}
  */
 const config = {
-  trailingComma: "es5",
-  tabWidth: 2,
-  semi: false,
-  singleQuote: true,
-};
+	trailingComma: "es5",
+	tabWidth: 2,
+	
+}
 
-module.exports = config;
+// eslint-disable-next-line no-undef
+module.exports = config

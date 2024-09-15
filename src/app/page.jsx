@@ -2,7 +2,7 @@
 "use client"
 import { useState } from "react"
 import Image from "next/image"
-import style from "./page.module.css"
+import styles from "./page.module.css"
 import image from "./assets/amazon-ar21.svg"
 import Cards from "./components/cards"
 
@@ -14,16 +14,17 @@ export default function Home() {
 	}
 
 	return (
-		<div className={style.main}>
-			<div className={style.header}>
-				<div className={style.logocontain}>
+		<div className={styles.main}>
+			<div className={styles.header}>
+				<div className={styles.logocontain}>
 					<a
 						href="https://amzn.to/4dnkRpX"
 						target="_blank"
+						rel="noopener noreferrer"
 					>
 						<Image
 							priority={true}
-							className={style.logo}
+							className={styles.logo}
 							src={image}
 							alt="amazon logo"
 							width={350}
@@ -32,9 +33,9 @@ export default function Home() {
 					</a>
 				</div>
 				<a href="https://www.amazonofertas.live/">
-					<h1 className={style.title}>Amazon Ofertas </h1>
+					<h1 className={styles.title}>Amazon Ofertas </h1>
 				</a>
-				{/* <div className={style.nav}>
+				{/* <div className={styles.nav}>
 					<button onClick={toggleMenu}>{isOpen ? "Cerrar" : "Menú"}</button>
 					<ul className={isOpen ? "show" : ""}>
 						<li>
