@@ -12,6 +12,7 @@ export default function Home() {
 	const toggleMenu = () => {
 		setIsOpen(!isOpen)
 	}
+
 	return (
 		<div className={style.main}>
 			<div className={style.header}>
@@ -31,7 +32,7 @@ export default function Home() {
 					</a>
 				</div>
 				<a href="https://www.amazonofertas.live/">
-				<h1  className={style.title}>Amazon Ofertas </h1> 
+					<h1 className={style.title}>Amazon Ofertas </h1>
 				</a>
 				{/* <div className={style.nav}>
 					<button onClick={toggleMenu}>{isOpen ? "Cerrar" : "Menú"}</button>
@@ -60,9 +61,8 @@ export default function Home() {
 					</ul>
 				</div> */}
 			</div>
-			
-				<Cards />
-			
+
+			<Cards />
 		</div>
 	)
 }

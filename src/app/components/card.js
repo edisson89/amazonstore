@@ -28,7 +28,7 @@ const Card = ({ title, image, url, precio, oferta }) => {
 		<div className={styles.card}>
 			{showTitle && (
 				<div className={styles.title}>
-					<a 
+					<a
 						href={url}
 						target="_blank"
 						rel="noopener noreferrer"
@@ -91,7 +91,6 @@ const Card = ({ title, image, url, precio, oferta }) => {
 								/>
 							</a>
 						</div>
-						
 					</>
 				)}
 			</div>
