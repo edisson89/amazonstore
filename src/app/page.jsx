@@ -1,3 +1,5 @@
+/* eslint-disable react/react-in-jsx-scope */
+/* eslint-disable no-unused-vars */
 /** @format */
 "use client"
 import { useState } from "react"
@@ -32,7 +34,7 @@ export default function Home() {
 						/>
 					</a>
 				</div>
-				<a href="https://www.amazonofertas.live/">
+				<a rel="noopener noreferrer" href="https://www.amazonofertas.live/">
 					<h1 className={styles.title}>Amazon Ofertas </h1>
 				</a>
 				{/* <div className={styles.nav}>

@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 /** @format */
 
 import styles from "./card.module.css"
@@ -158,6 +159,7 @@ export default function Cards() {
 	]
 
 	return (
+		// eslint-disable-next-line react/react-in-jsx-scope
 		<div className={styles.cardsMain}>
 			{images &&
 				images
