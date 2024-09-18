@@ -14,11 +14,20 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+	
 	return (
 		// eslint-disable-next-line react/react-in-jsx-scope
 		<html lang="en">
 			<head>
-				<meta charset="UTF-8" />
+				<meta charSet="UTF-8" />
+				<noscript>
+				<iframe
+					src="https://www.googletagmanager.com/ns.html?id=GTM-NBVLCKCM"
+					height='0'
+					width='0'
+					style={{display:'none', visibility:'hidden'}}
+				></iframe>
+			</noscript>
 				<link
 					rel="icon"
 					href="./favicon.ico"
@@ -46,17 +55,13 @@ export default function RootLayout({ children }) {
 				/>
 
 				<title>Amazon Ofertas</title>
+				
+				
 			</head>
+			
 			<body className={inter.className}>{children}</body>
-
-			<noscript>
-				<iframe
-					src="https://www.googletagmanager.com/ns.html?id=GTM-NBVLCKCM"
-					height="0"
-					width="0"
-					style={{display:'none', visibility:'hidden'}}
-				></iframe>
-			</noscript>
+			
+			
 		</html>
 	)
 }
