@@ -7,6 +7,7 @@ import React, { useCallback, useEffect, useState } from "react"
 const Card = ({ title, image, url, precio, oferta }) => {
 	const [activeIndex, setActiveIndex] = useState(0)
 	const [showTitle, setShowTitle] = useState(true) // Estado para controlar la visibilidad del título
+	
 
 	const nextSlide = useCallback(() => {
 		// eslint-disable-next-line react/prop-types
@@ -18,6 +19,7 @@ const Card = ({ title, image, url, precio, oferta }) => {
 		setActiveIndex((prevIndex) => (prevIndex - 1 + image.length) % image.length)
 	}
 	useEffect(() => {
+		
 		const timer = setInterval(nextSlide, 2200) // Cambia la imagen cada 3 segundos
 		// Función para alternar la visibilidad del título
 
