@@ -5,10 +5,11 @@ import React, { useCallback, useEffect, useState } from "react"
 
 // eslint-disable-next-line react/prop-types
 const Card = ({ title, image, url, precio, oferta }) => {
+	const [oculto, setOculto] = useState(false)
 	const [activeIndex, setActiveIndex] = useState(0)
 	const [showTitle, setShowTitle] = useState(true) // Estado para controlar la visibilidad del título
 	
-
+	
 	const nextSlide = useCallback(() => {
 		// eslint-disable-next-line react/prop-types
 		setActiveIndex((prevIndex) => (prevIndex + 1) % image.length)
@@ -28,6 +29,7 @@ const Card = ({ title, image, url, precio, oferta }) => {
 	// Función para alternar la visibilidad del título
 	const toggleTitleVisibility = () => {
 		setShowTitle((prevShowTitle) => !prevShowTitle)
+		setOculto(!oculto);
 	}
 	return (
 		<div className={styles.card}>
@@ -68,10 +70,10 @@ const Card = ({ title, image, url, precio, oferta }) => {
 								Anterior
 							</button>
 							<button
-								className={styles.btn}
+								className={`${styles.btn}  ${!oculto ? styles.blink : null}`}
 								onClick={toggleTitleVisibility}
 							>
-								Ocultar titulo
+								{`${!oculto ? 'Ocultar titulo' : 'Mostrar titulo'}`}
 							</button>
 							<button
 								className={styles.btn}
