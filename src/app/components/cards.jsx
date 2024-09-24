@@ -133,6 +133,8 @@ import raddio from "../assets/radio/radio.jpg"
 import raddio1 from "../assets/radio/radio2.jpg"
 import raddio2 from "../assets/radio/radio3.jpg"
 import raddio3 from "../assets/radio/radio4.jpg"
+import prime from "../assets/prime/prime.png"
+
 
 import Card from "./card"
 
@@ -140,10 +142,10 @@ import Card from "./card"
 
 export default function Cards() {
 	const images = [
+		{title:'Te damos una prueba gratis de Prime por 30 días Entregas gratis, ofertas exclusivas, televisión galardonada y más',image:[prime],url:'https://amzn.to/4eABUpq',ofert:'Gratis',price:'Gratis'},
 		{title:'Altavoz Bluetooth con sonido HD, inalámbrico portátil, IPX5 impermeable, hasta 24 horas de reproducción, emparejamiento TWS, BT5.3, para el hogar, fiesta, al aire libre/playa, dispositivos',image:[raddio,raddio1,raddio2,raddio3],url:'https://amzn.to/3XxdExd',ofert:'-67%',price:'84,497'},
 		{title:'Almohada de gel de colección Beckham Hotel (paquete por 2). Almohada de gel de lujo de felpa. Resistente al polvo y ácaros e hipoalergénicaz',image:[almohada,almohada1,almohada2,almohada3],url:'https://amzn.to/4dcCbgU',ofert:'-15%',price:'215,450.'},
 		{title:'Mochila de viaje, mochila extra grande, mochila de transporte',image:[bolson,bolson1,bolson2,bolso4,bolson3],url:'https://amzn.to/3TxdGEe',ofert:'-39%',price:'147,902'},
-		
 		{ title: "Caja de arena autolimpiante – Caja de arena automática para gatos de 110 litros de autolimpieza, todo se puede usar, con 1 rollo de bolsas de basura y alfombra, control de aplicación, color blanco", image: [gato, gato1, gato2], url: "https://amzn.to/3N0Hbed", ofert: "-14%", price: "1,263,557" },
 		{ title: "Sceptre Monitor WQHD ultraancho curvo de 34 pulgadas 3440 x 1440 R1500 hasta 165Hz DisplayPort x2 99% sRGB 1 ms imagen por imagen, negro máquina 2023", image: [pantalla, pantalla1, pantalla2, pantalla3], url: "https://www.amazon.com/Sceptre-ultraancho-pulgadas-DisplayPort-C345B-QUT168/dp/B0BTK1C533?th=1&linkCode=ll1&tag=edd06d-20&linkId=ae14c24655b357af4453bfa39f42f38b&language=es_US&ref_=as_li_ss_tl", ofert: "21%", price: "920,024" },
 		{ title: "Wavytalk Secador de pelo iónico profesional con difusor y concentrador para cabello rizado, secador de iones negativos de 1875 vatios con boquilla de tecnología cerámica para un secado rápido", image: [secador, secador1, secador2, secador3], url: "https://www.amazon.com/Wavytalk-profesional-concentrador-negativos-tecnolog%C3%ADa/dp/B09CP8SSGP?th=1&currency=COP&linkCode=ll1&tag=edd06d-20&linkId=74ee1678ed6433563113666c1b358316&language=es_US&ref_=as_li_ss_tl", ofert: "-42%", price: "133,128" },
