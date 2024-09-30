@@ -134,6 +134,22 @@ import raddio1 from "../assets/radio/radio2.jpg"
 import raddio2 from "../assets/radio/radio3.jpg"
 import raddio3 from "../assets/radio/radio4.jpg"
 import prime from "../assets/prime/prime.png"
+import maquina from "../assets/maquina/maquina.jpg"
+import maquina2 from "../assets/maquina/maquina2.jpg"
+import maquina3 from "../assets/maquina/maquina3.jpg"
+import maquina4 from "../assets/maquina/maquina4.jpg"
+import maquina5 from "../assets/maquina/maquina5.jpg"
+import luces from "../assets/lucesout/luz.jpg"
+import luces1 from "../assets/lucesout/luces2.jpg"
+import luces2 from "../assets/lucesout/luces3.jpg"
+import luces3 from "../assets/lucesout/luces4.jpg"
+import luces4 from "../assets/lucesout/luces5.jpg"
+import luces5 from "../assets/lucesout/luces6.jpg"
+import disco from "../assets/disco/disco.jpg"
+import disco2 from "../assets/disco/disco2.jpg"
+import disco3 from "../assets/disco/disco3.jpg"
+import disco4 from "../assets/disco/disco4.jpg"
+
 
 
 import Card from "./card"
@@ -142,6 +158,9 @@ import Card from "./card"
 
 export default function Cards() {
 	const images = [
+		{title:'SAMSUNG 990 PRO SSD 4TB PCIe 4.0 M.2 2280 Disco duro interno de estado sólido, velocidades de lectura secuenciales de hasta 7,450 MB/s para estaciones de trabajo de alta gama, computación y juegos',image:[disco,disco2,disco3,disco4],url:'https://amzn.to/4ds6wbu',ofert:'-40%',price:'1,166,158'},
+		{title:'Govee Luces permanentes para exteriores Pro, 200 pies con 120 luces LED RGBIC para iluminación diaria y de acento, 75 modos de escena para Halloween, IP67 impermeable, funciona con Alexa, Google',image:[luces,luces1,luces2,luces3,luces4,luces5],url:'https://amzn.to/3XLI3bp',ofert:'-26%',price:'2,165,758'},
+		{title:'Breville BES870XL Barista Express - Máquina de café espresso, Espresso Machine',image:[maquina,maquina2,maquina3,maquina4,maquina5],url:'https://amzn.to/3Y3BuSJ',ofert:'-27%',price:'2,290,541.'},
 		{title:'Te damos una prueba gratis de Prime por 30 días Entregas gratis, ofertas exclusivas, televisión galardonada y más',image:[prime],url:'https://amzn.to/4eABUpq',ofert:'Gratis',price:'Gratis'},
 		{title:'Altavoz Bluetooth con sonido HD, inalámbrico portátil, IPX5 impermeable, hasta 24 horas de reproducción, emparejamiento TWS, BT5.3, para el hogar, fiesta, al aire libre/playa, dispositivos',image:[raddio,raddio1,raddio2,raddio3],url:'https://amzn.to/3XxdExd',ofert:'-67%',price:'84,497'},
 		{title:'Almohada de gel de colección Beckham Hotel (paquete por 2). Almohada de gel de lujo de felpa. Resistente al polvo y ácaros e hipoalergénicaz',image:[almohada,almohada1,almohada2,almohada3],url:'https://amzn.to/4dcCbgU',ofert:'-15%',price:'215,450.'},
