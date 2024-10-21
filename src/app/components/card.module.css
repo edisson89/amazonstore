@@ -14,7 +14,9 @@
 }
 .title{
   height: 20vh;
+  
 }
+
 .titleLink{
   font-size: 15px;
 }
@@ -38,7 +40,7 @@
   color: #f32b0c;
 }
 .precio{
-  color: black;
+  color: #e58031;
 }
 .comprar{
   color: #04ff00;
@@ -115,7 +117,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 10px;
     justify-content: center;
     flex-wrap: nowrap;
