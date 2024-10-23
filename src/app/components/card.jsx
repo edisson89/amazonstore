@@ -5,9 +5,12 @@ import React, { useCallback, useEffect, useState } from "react"
 
 // eslint-disable-next-line react/prop-types
 const Card = ({ title, image, url, precio, oferta }) => {
-	const [oculto, setOculto] = useState(true)
+	const windowWidth = window.innerWidth;
+	
+	const [oculto, setOculto] = useState(windowWidth >= 600 || true)
 	const [activeIndex, setActiveIndex] = useState(0)
-	const [showTitle, setShowTitle] = useState(false) // Estado para controlar la visibilidad del título
+	const [showTitle, setShowTitle] = useState(windowWidth >= 600 || false
+	) // Estado para controlar la visibilidad del título
 	
 	
 	const nextSlide = useCallback(() => {
@@ -22,8 +25,7 @@ const Card = ({ title, image, url, precio, oferta }) => {
 	useEffect(() => {
 		
 		const timer = setInterval(nextSlide, 2600) // Cambia la imagen cada intervalo segundos
-		// Función para alternar la visibilidad del título
-		
+				
 		return () => clearInterval(timer) // Limpia el temporizador al desmontar el componente
 	}, [activeIndex, nextSlide]) // Dependencia para reiniciar el temporizador si el activeIndex cambia
 	// Función para alternar la visibilidad del título
@@ -33,7 +35,7 @@ const Card = ({ title, image, url, precio, oferta }) => {
 	}
 	return (
 		<div className={styles.card}>
-			{showTitle && (
+			{ showTitle && (
 				<div className={styles.title}>
 					<a
 						href={url}
@@ -93,7 +95,8 @@ const Card = ({ title, image, url, precio, oferta }) => {
 								<Image
 									className={styles.cardImg}
 									src={image[activeIndex]}
-									alt={`${title} - Slide ${activeIndex}`}
+									srcSet={`${image[activeIndex]} 1x, ${image[activeIndex]} 2x`}
+									alt={`Fotografia de ${title} - Slide ${activeIndex}`}
 									width={220}
 								/>
 							</a>
